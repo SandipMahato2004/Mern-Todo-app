@@ -1,16 +1,91 @@
-# React + Vite
+# MERN Todo App
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+A simple Todo application built using the **MERN Stack (MongoDB, Express, React, Node.js)**.
+This project allows users to create and manage their daily tasks with authentication.
 
-Currently, two official plugins are available:
+## Features
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) (or [oxc](https://oxc.rs) when used in [rolldown-vite](https://vite.dev/guide/rolldown)) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+* User Authentication (JWT based login)
+* Add new todos
+* View all todos
+* Delete todos
+* MongoDB database integration
+* REST API backend using Express
 
-## React Compiler
+## Tech Stack
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+* **Frontend:** React.js
+* **Backend:** Node.js, Express.js
+* **Database:** MongoDB
+* **Authentication:** JSON Web Token (JWT)
 
-## Expanding the ESLint configuration
+## Project Structure
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+```
+mern-todo-app
+ ├── backend
+ │     ├── server.js
+ │     ├── routes
+ │     ├── models
+ │     └── middleware
+ │
+ └── frontend
+       ├── src
+       ├── public
+       └── package.json
+```
+
+## Installation
+
+### 1. Clone the repository
+
+```
+git clone https://github.com/yourusername/mern-todo-app.git
+```
+
+### 2. Install backend dependencies
+
+```
+cd backend
+npm install
+```
+
+### 3. Install frontend dependencies
+
+```
+cd frontend
+npm install
+```
+
+### 4. Run backend server
+
+```
+node server.js
+```
+
+### 5. Run React frontend
+
+```
+npm start
+```
+
+## Environment Variables
+
+Create a `.env` file in the backend folder and add:
+
+```
+MONGO_URI=mongodb://127.0.0.1:27017/todoapp
+JWT_SECRET=mysecretkey
+PORT=5000
+```
+
+## Future Improvements
+
+* Update todo feature
+* Better UI design
+* User registration page
+* Deploy the application
+
+## Author
+
+Sandip Mahato
